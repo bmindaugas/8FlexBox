@@ -1,0 +1,73 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>flex box</title>
+
+    <style>
+        body { 
+            margin: 0;
+            padding: 0;
+        }
+        div, header, footer {
+            width: 100%;
+            height: 100%;
+            border: solid black 1px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+        }
+        header {
+            align-items: flex-start;
+            flex-direction: row;
+            height: 4em;
+            background-color: green;
+        }
+        #c, #d, #e, #f, #g, #h {
+            flex-direction: row;
+        }
+        footer {
+            align-items: flex-end;
+            height: 4em;
+            background-color: aqua;
+        }
+        #a { flex-grow: initial; }
+        #b { flex: 25%; }
+        #c { flex-grow: initial; justify-content: space-between; }
+        /* #d {  } */
+        /* #e {  } */
+        #f { display: flex; flex-direction: column; flex: 25%; background-color: red; }
+        /* #g {  } */
+        #h { display: flex; flex-direction: column; flex: 25%; background-color: red; }
+
+    </style>
+</head>
+<body>
+<div>
+    <header>
+        <div id="a">a</div>
+        <div id="b">b</div>
+    </header>
+    
+    <div>
+
+        <div id="c">c</div>
+
+        <div>
+            <div id="d">d</div>
+            <div id="e">e</div>
+            <div id="g">g</div>
+        </div>
+
+        <div>
+            <div id="f">f</div>
+            <div id="h">h</div>
+        </div>
+
+    </div>
+
+    <footer>apacia I</footer>
+
+</div>
+</body>
+</html>
