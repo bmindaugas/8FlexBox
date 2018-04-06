@@ -1,0 +1,113 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>flex box1</title>
+
+    <style>
+        body { margin: 0; padding: 0; }
+
+        header {
+            border: solid white 8px;
+            background-color: green;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+        #vidurys { 
+        /* border: solid white 8px; */
+        display: flex;
+        justify-content: space-between;     
+        }
+        
+        #a {
+            border-right: solid white 8px ;
+            display: flex;
+            flex-grow: 1;
+        }
+        #b {
+            width: 25vw;
+            height: 4em;
+        }
+        #c { 
+            border-left: solid white 8px;
+            border-right: solid white 8px;
+            background-color: yellow;
+            display: flex;
+            justify-content: flex-start;
+            width: 25vw;
+
+        }
+        #f {
+            display: flex;
+            flex-direction: column;
+            border-bottom: solid white 8px;
+            border-right: solid white 8px;
+            border-left: solid white 8px;
+            background-color: red;
+            width: 25vw;
+            height: calc(8em + 8px);
+        }
+        #h {
+            display: flex;
+            flex-direction: column;
+            border-right: solid white 8px;
+            border-left: solid white 8px;
+            background-color: red;
+            width: 25vw;
+            height: calc(100vh - 16em - 48px);
+            align-items: stretch;
+        }
+        #d, #e, #g { 
+            /* border: solid white 1px; */
+            align-items: center; 
+            background-color: blue; 
+            display: flex; 
+            flex-direction: column;
+            flex-grow: 1; 
+        }
+        #d { 
+            border-bottom: solid white 8px;
+            width: 50vw;
+            height: 4em;
+        }
+        #e { 
+            border-bottom: solid white 8px;
+            width: 50vw;
+            height: 4em;
+        }
+        #g {
+            display: flex;
+            height: calc(100vh - 16em - 48px);
+        }
+        
+
+        footer { border: solid white 8px; background-color: aqua; height: 4em; }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div id="a">A</div>
+        <div id="b">B</div>
+    </header>
+
+    <div id="vidurys">
+        <div id="c">C</div>
+        <div>
+            <div id="d">D</div>
+            <div id="e">E</div>
+            <div id="g">G</div>
+        </div>
+        <div>
+            <div id="f">F</div>
+            <div id="h">H</div>
+        </div>
+    </div>
+
+    <footer>I</footer>
+
+</body>
+</html>
